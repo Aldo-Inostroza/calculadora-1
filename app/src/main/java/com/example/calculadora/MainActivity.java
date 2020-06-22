@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private  string number ="";
     public double num1 = 0;
-    private doubble num2 = 0;
+    private double num2 = 0;
     protected String symbol;
 
 
