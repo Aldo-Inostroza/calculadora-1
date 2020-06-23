@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private TextView resultado;
     private Button Key_Pad0, Key_Pad1, Key_Pad2, Key_Pad3, Key_Pad4, Key_Pad5, Key_Pad6, Key_Pad7, Key_Pad8, Key_Pad9;
-    private Button Key_PadSum, Key_Padresta, Key_PadMultiply, Key_Padequal, Key_PadClear;
+    private Button Key_PadSum, Key_Padresta, Key_PadMultiply,Key_PadDivision, Key_Padequal, Key_PadClear;
 
 
     @Override
@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Key_PadClear = findViewById(R.id.CE);
         Key_PadMultiply = findViewById(R.id.multiply);
+        Key_PadDivision = findViewById(R.id.division);
         Key_PadSum = findViewById(R.id.sum);
         Key_Padresta = findViewById(R.id.resta);
         Key_Padequal = findViewById(R.id.equal);
@@ -65,6 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Key_PadMultiply.setOnClickListener(this);
         Key_Padresta.setOnClickListener(this);
         Key_Padequal.setOnClickListener(this);
+        Key_PadDivision.setOnClickListener(this);
         Key_PadClear.setOnClickListener(this);
 
     }
@@ -172,6 +174,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         resultado.setText("= " + (num1 * num2));
                         break;
                 }
+
             num1 = 0;
             num2 = 0;
             number = "";
