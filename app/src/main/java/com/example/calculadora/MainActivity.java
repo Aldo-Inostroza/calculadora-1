@@ -149,6 +149,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 number = "";
                 break;
 
+
             case R.id.CE:
                 symbol = "";
                 number = "";
@@ -157,7 +158,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 resultado.setText("");
                 break;
 
+
             case R.id.equal:
+
                 num2 = Integer.parseInt(number);
 
                 switch (symbol){
@@ -174,6 +177,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         resultado.setText("= " + (num1 * num2));
                         break;
                 }
+
+
 
             num1 = 0;
             num2 = 0;
